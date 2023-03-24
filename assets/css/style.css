@@ -793,14 +793,12 @@ section {
   top: -30px;
 }
 
-#portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
-  bottom: 0;
-}
+
 
 @media (max-width: 768px) {
   #portfolio .portfolio-item .portfolio-info {
-    position: absolute;
+    opacity: 1;
+    display: block;
     /*left: 60px;
     right: 60px; 
     bottom: 51px;*/
@@ -812,9 +810,11 @@ section {
     transform: translate(-50%, -50%);
     right: -20%;
     bottom: 15%;
+    
   }
 
   #portfolio .portfolio-item .portfolio-info h4 {
+    
     text-align: center;
     font-size: 18px;
     color: #fff;
