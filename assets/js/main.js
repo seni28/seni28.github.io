@@ -248,19 +248,34 @@
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  if (window.innerWidth > 768) { // Écran d'ordinateur (largeur supérieure à 768px)
+    new Swiper('.portfolio-details-slider', {
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    });
+  } else { // Écran de smartphone (largeur inférieure ou égale à 768px)
+    new Swiper('.portfolio-details-slider', {
+      speed: 400,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      touch: true,
+      allowTouchMove: true,
+    });
+  }
+  
 
   /**
    * Testimonials slider
