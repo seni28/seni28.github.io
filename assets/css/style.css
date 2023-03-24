@@ -784,11 +784,6 @@ section {
 }
 
 
-#portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
-  bottom: 0;
-}
-
 #portfolio .portfolio-item:hover img {
   top: -30px;
 }
