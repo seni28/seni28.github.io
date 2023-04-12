@@ -104,7 +104,7 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/jiritsu_home.png" alt="">
+                  <img src="assets/img/portfolio/Jiritsu_home_grpah.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
@@ -112,7 +112,11 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/video_adiwiki.png" alt="">
+                  <img src="assets/img/portfolio/Jiritsu_info.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/jiritsu_elec.png" alt="">
                 </div>
 
               </div>
@@ -130,13 +134,13 @@
                 <li><strong>Client</strong> : Etudiants et jeunes actifs </li>
                 <li><strong>Date </strong> : Septembre - Juin 2022</li>
                 <li><strong>URL du projet</strong> : 
-                  <a href="https://sites.google.com/view/adiwiki-junia/accueil" target="_blank"> 
-                    https://sites.google.com/view/adiwiki-junia
+                  <a href="https://github.com/seni28/Jiritsu" target="_blank"> 
+                    Jiritsu Github
                   </a>
                 </li>
                 <li><strong>Objectifs </strong> : Ré-amenager des contenaires en logements 
                  avec une démarche Low-tech, auto-suffisante et éco-résponsable </li>
-                
+                <li><strong>Hardskills </strong> : Code HTML/CSS/JS et Arduino</li>
                 
                 
               </ul>
@@ -147,40 +151,46 @@
             <h2>Description du projet</h2>
             <p>
             
-              L'un des objectis de ce projet était de creer un habitat le 
-              plus éco-résponsable, de limiter la domotique inutile ainsi que 
-              d'utiliser le maximum d'installations Low Tech. 
+              L'un des objectifs de ce projet était de créer un habitat le
+              plus éco-responsable, de limiter la domotique inutile ainsi que
+              d'utiliser le maximum d'installations Low Tech.
               Ce projet regroupait 13 étudiants souhaitant intégrer HEI, ISA et ISEN.
               
               <br><br>
-              En tant qu'étudiants de l'ISEN, nous avons donc penser à une manière
+              En tant qu'étudiants de l'ISEN, nous avons donc pensé à une manière
               écologique d'utiliser la technologie d'aujourd'hui. Après un sondage
               auprès de notre public cible, nous avons décidé de créer un dashboard
               permettant à l'habitant de suivre sa consommation d'énergie et d'eau.
-              Une citerne étant également présente dans le logement, le niveau d'eau restant
-              sera également affiché sur le dashboard. 
+            
               <br> Nous étions 3 étudiants de l'ISEN à travailler sur cette partie du projet.
 
               <h2>Details du projet</h2>
-              Pour mesurer la quantité d'eau consommée et récupérée (eau de pluie), nous avions 
-              pensé à utiliser un capteur ultrason. Le fonctionnement aurait été le suivant : le 
-              capteur émet des ultrasons qui sont réflechis par la surface de l'eau. Le temps
-              de retour de l'utrason permet de calculer la distance entre le capteur et la surface
-              de l'eau, et donc de calculer la quantité d'eau présente dans la citerne. 
+              Pour mesurer la quantité d'eau consommée et récupérée (eau de pluie), deux options 
+              ont été étudiées. La première était d'utiliser un capteur ultrason HC-SR04.
+              Ce capteur émet des ultrasons, qui sont réfléchis par la surface de l'eau. Le temps
+              de retour de l'ultrason permet de calculer la distance entre le capteur et la surface
+              de l'eau, et donc de calculer la quantité d'eau présente dans la citerne.
               <br>
-              Cependant, nous avons décidé de nous tourner vers
-              un capteur de poids. Ce capteur est plus précis et permet de mesurer la quantité 
+              La seconde option étudiée était d'utiliser un capteur de poids. 
+              Le principe est de poser le capteur en desous de la citerne, 
+              et de mesurer la différence de poids. Un litre d'eau pesant un kilogramme, 
+              le poids était comparé à la contenance maximum de la citerne.
+              Ce capteur est plus précis et permet de mesurer la quantité 
               d'eau récupérée et consommée grâce à de rapides calculs.
-            
+            <br>
+            Nous avons testé les deux options, le choix du capteurs sera à définir en 
+            fonction de l'habitat contruit.
               <br><br>
               Pour la partie électricité, nous nous sommes renseignés sur les API des compteurs
-              Linky. Ces API permettent de récupérer les données de consommation d'électricité
-              et de les afficher sur notre dashboard.
-              Cette partie n'a pas pu etre tester puisque nous n'avions pas accès à un compteur Linky.
-
-              
-              
-
+              électrique Linky. Ces API permettent de récupérer les données de consommation 
+              d'électricité et de les afficher sur notre dashboard.
+              <br> <br>
+              Nous avons également étudié la possibilité d'utiliser un capteur de température 
+              et d'humidité DHT22 à la suite de notre sondage. L'utilité de permettre à l'habitant
+              de savoir quand aérer l'habitat ou allumer le poêle, qui est le système de chauffage 
+              que l'équipe Low Tech a choisis. Cela permet la bonne conservation des 
+              légumes par exemple, mais aussi d'éviter les moisissures.
+    
             </p>
           </div>
         </div>
