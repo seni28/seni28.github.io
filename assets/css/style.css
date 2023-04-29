@@ -89,37 +89,41 @@ h6 {
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 
-#header #logo h1 {
-  font-size: 42px;
+#icons-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
 }
 
-#header #logo h1 a {
-  color: #000000;
+#icons-nav li {
+  margin: 5px 5px;
 }
 
-#header #logo h1 a span {
-  color: #7628cf;
+#icon-nac .nav-link{
+  background-color: #9e4aff;
 }
 
-#header #logo img {
-  padding: 0;
-  margin: 0;
+#icons-nav .flag {
+  width: 20px;
+  height: 20px;
 }
+
+
+
 
 @media (max-width: 768px) {
   #header {
     height: 60px;
   }
 
-  #header #logo h1 {
+  #header #icons-nav h1 {
     font-size: 34px;
   }
 
-  #header #logo img {
+  #header #icons-nav img {
     max-height: 40px;
   }
 }
@@ -259,15 +263,7 @@ h6 {
   color: #fff;
 }
 
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
 
-  .navbar ul {
-    display: none;
-  }
-}
 
 .navbar-mobile {
   position: fixed;
@@ -350,6 +346,87 @@ h6 {
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
+}
+
+ /* Style for the dropdown menu */
+ .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropdown button {
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 16px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Style for the dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style for the flags */
+.flag {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  /* Adjust the font size for small screens */
+  .dropdown button {
+    font-size: 14px;
+  }
+  
+  /* Set the dropdown content to display on click */
+  .dropdown-content {
+    position: static;
+    display: none;
+  }
+  
+  /* Show the dropdown content when the button is clicked */
+  .dropdown button:focus + .dropdown-content {
+    display: block;
+  }
+  
+  /* Hide the dropdown content when the button loses focus */
+  .dropdown-content:focus-within {
+    display: none;
+  }
+  
+  /* Remove the padding on the links for mobile devices */
+  .dropdown-content a {
+    padding: 0;
+  }
 }
 
 /*--------------------------------------------------------------
